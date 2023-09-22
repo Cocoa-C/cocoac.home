@@ -1,0 +1,189 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.center{
+    text-align: center;
+}
+
+h1{
+    color:white; 
+    font-size: 45px;
+}
+
+h2{
+    color:white; 
+    font-size: 30px;
+}
+
+.list{
+    color: #012063;
+}
+
+ul{
+    list-style-type: none;
+    position: relative;
+}
+
+li{
+    font-size: 25px;
+}
+
+a{
+    text-decoration: none;
+    color: #012063;
+}
+
+.container{
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    z-index: -1;
+    background-image: url(background\ .webp);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size:cover;
+}
+
+.header{
+    background-color: rgba(255, 255, 255, 0.382);
+    backdrop-filter: blur(15px);
+    height: 45px;
+    display: flex;
+    justify-content: space-between;
+    align-items:center;
+    padding: 0.5%;
+    position: relative;
+}
+
+.header .logo{
+    margin-top: 5px;
+}
+
+.header ul{
+    list-style: none;
+    display: flex;
+}
+
+.header ul li{
+    padding: 10px 30px;
+    position: relative;
+}
+
+.header ul li a{
+    font-size: 15pt;
+    color: #012063;
+}
+
+.fas{
+    float: right;
+    margin-left: 10px;
+    padding-top: 3px;
+}
+
+.dropdown-menu{
+    display: none;
+
+}
+
+.header ul li:hover .dropdown-menu{
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 100%;
+    background-color: rgba(255, 255, 255, 0.382);
+    backdrop-filter: blur(15px);
+}
+
+.center h1{
+    margin-top: 20%;
+    text-shadow: 0 3px 20px rgba(1, 32, 99, 0.9);
+}
+
+.center h2{
+    margin-top: 5%;
+    text-shadow: 0 3px 20px rgba(1, 32, 99, 0.9);
+}
+
+.login-box {
+    display: flex;
+    overflow: hidden;
+    width: 56rem;
+    height: 31.5rem;
+    background-color: rgba(255,255,255,61.8%);
+    backdrop-filter: blur(15px);
+    border-radius: 1.5rem;
+    margin: 10% auto;
+    box-shadow: 0 0 1rem 0.2rem rgb(1 32 99 / 38.2%);
+}
+
+.login-box .left {
+    display: flex;
+    width: 61.8%;
+    flex-direction: column;
+    align-items: center;
+}
+
+.login-box .left h4{
+    color: rgb(1,32,99);
+    font-size: 2rem;
+    margin-top: 2.4rem;
+}
+
+.login-box .left .acc {
+    outline: none;
+    width: 60%;
+    height: 3rem;
+    font-size: 1rem;
+    margin-top: 4.5rem;
+    padding: 1rem 0 0 1.6rem;
+    border: none;
+    border-bottom:1px solid rgb(1,32,99) ;
+    color: rgb(1,32,99);
+    background-color: rgba(0,0,0,0);
+}
+
+.left .acc:focus {
+    outline: none;
+    color: rgb(1,32,99);
+    padding: 1rem 0 0 1.6rem;
+}
+
+.left .fn {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 5rem;
+    width: 50%;
+}
+
+.login-box .right {
+    display: flex;
+    position: relative;
+    width: 38.2%;
+    height: 100%;
+    background-color:#1ebafc50;
+    flex-direction: column;
+    align-items: center;
+}
+
+.login-box .right .login-button{
+    flex-direction: column;
+    margin-top: 11rem;
+    background-color: #FFFFFF;
+    border-radius: 50%;
+    border: none;
+    width: 150px;
+    height: 150px;
+    transition: 0.618s;
+}
+
+.right .login-button:hover{
+    scale: 108%;
+}
+
+.right .login-button:active{
+    opacity: 75%;
+    scale: 92%;
+}
